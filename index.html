@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;800&display=swap" rel="stylesheet">
+	<title>Sult</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<!-- 	<div class="header__bg-img">
+				<picture>
+					<source srcset="img/Bg.webp" type="image/webp"><img src="img/Bg.jpg" alt="">
+				</picture>
+			</div> -->
+			<div class="header__container">
+				<div class="header__logo">
+					<svg width="39" height="50" viewBox="0 0 39 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink">
+						<rect width="39" height="50" fill="url(#pattern0)" />
+						<defs>
+							<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#image0" transform="scale(0.0128205 0.01)" />
+							</pattern>
+							<image id="image0" width="78" height="100"
+								xlink:href="data:image/png;base64,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" />
+						</defs>
+					</svg>
+				</div>
+				<div class="header__menu menu">
+					<div class="menu__icon icon-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="menu__body">
+						<ul>
+							<li><a href="" class="menu__link">HOME</a></li>
+							<li><a href="" class="menu__link">PRODUCTS</a></li>
+							<li><a href="" class="menu__link">SERVICES</a></li>
+							<li><a href="" class="menu__link">RESOURCES</a></li>
+							<li><a href="" class="menu__link">ABOUT</a></li>
+							<li><a href="" class="menu__link">CONTACT US</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__slider slider">
+					<div class="slider__item">
+						<div class="slider__image">
+							<svg width="100" height="83" viewBox="0 0 100 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M89.4961 21.1194C89.5565 22.013 89.5566 22.9065 89.5566 23.8082C89.5566 51.2853 69.0727 82.9747 31.617 82.9747V82.9582C20.5525 82.9747 9.71784 79.7383 0.40332 73.6359C2.01219 73.8335 3.62913 73.9324 5.25009 73.9365C14.4195 73.9447 23.3267 70.8029 30.5404 65.0177C21.8267 64.8488 14.1856 59.0471 11.5162 50.5771C14.5686 51.1782 17.7138 51.0547 20.7098 50.2188C11.2098 48.2588 4.37509 39.7353 4.37509 29.8365C4.37509 29.7459 4.37509 29.6594 4.37509 29.573C7.20574 31.183 10.3751 32.0765 13.617 32.1753C4.66945 26.0688 1.91138 13.9135 7.31461 4.41001C17.6533 17.4012 32.9074 25.2988 49.2824 26.1347C47.6412 18.9124 49.8832 11.3441 55.1735 6.26707C63.3751 -1.60587 76.2743 -1.20234 83.984 7.16883C88.5445 6.2506 92.9154 4.54178 96.9154 2.1206C95.3953 6.93413 92.2138 11.023 87.9638 13.6212C92.0001 13.1353 95.9436 12.0318 99.6574 10.3477C96.9235 14.5312 93.4799 18.1753 89.4961 21.1194Z"
+									fill="white" />
+							</svg>
+						</div>
+						<div class="slider__row">
+							<h1 class="slider__title">
+								Device Authentication
+							</h1>
+							<div class="slider__text">SALT Group is a world leader in authen-
+								tication and security. We have
+								a range of services to improve user authentication.
+								Discover the possibilities with SALT.</div>
+							<span class="slider__button">GET STARTED</span>
+
+						</div>
+
+					</div>
+					<div class="slider__item">
+						<div class="slider__image">
+							<svg width="100" height="83" viewBox="0 0 100 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M89.4961 21.1194C89.5565 22.013 89.5566 22.9065 89.5566 23.8082C89.5566 51.2853 69.0727 82.9747 31.617 82.9747V82.9582C20.5525 82.9747 9.71784 79.7383 0.40332 73.6359C2.01219 73.8335 3.62913 73.9324 5.25009 73.9365C14.4195 73.9447 23.3267 70.8029 30.5404 65.0177C21.8267 64.8488 14.1856 59.0471 11.5162 50.5771C14.5686 51.1782 17.7138 51.0547 20.7098 50.2188C11.2098 48.2588 4.37509 39.7353 4.37509 29.8365C4.37509 29.7459 4.37509 29.6594 4.37509 29.573C7.20574 31.183 10.3751 32.0765 13.617 32.1753C4.66945 26.0688 1.91138 13.9135 7.31461 4.41001C17.6533 17.4012 32.9074 25.2988 49.2824 26.1347C47.6412 18.9124 49.8832 11.3441 55.1735 6.26707C63.3751 -1.60587 76.2743 -1.20234 83.984 7.16883C88.5445 6.2506 92.9154 4.54178 96.9154 2.1206C95.3953 6.93413 92.2138 11.023 87.9638 13.6212C92.0001 13.1353 95.9436 12.0318 99.6574 10.3477C96.9235 14.5312 93.4799 18.1753 89.4961 21.1194Z"
+									fill="white" />
+							</svg>
+						</div>
+						<div class="slider__row">
+							<h1 class="slider__title">
+								Device Authentication
+							</h1>
+							<div class="slider__text">SALT Group is a world leader in authen-
+								tication and security. We have
+								a range of services to improve user authentication.
+								Discover the possibilities with SALT.</div>
+							<span class="slider__button btn">GET STARTED</span>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="header__find-out-more find-out-more">
+					<a href="">
+						<div class="find-out-more__title">FIND OUT MORE</div>
+						<div class="find-out-more__image">
+							<svg width="62" height="71" viewBox="0 0 62 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M62 17.75L31 0L0 17.75V53.25L31 71L62 53.25V17.75ZM31 3.28249L59.1336 19.3912V51.6087L31 67.7175L2.8664 51.6087V19.3912L31 3.28249ZM19.2596 31.0114C18.4375 30.3157 17.207 30.4183 16.5114 31.2404C15.8157 32.0625 15.9183 33.293 16.7404 33.9886L29.7404 44.9886C30.4675 45.6038 31.5325 45.6038 32.2596 44.9886L45.2596 33.9886C46.0817 33.293 46.1843 32.0625 45.4886 31.2404C44.793 30.4183 43.5625 30.3157 42.7404 31.0114L31 40.9456L19.2596 31.0114Z"
+									fill="#FF8B00" />
+							</svg>
+						</div>
+
+					</a>
+
+
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__course course">
+				<div class="course__container">
+					<div class="course__row">
+						<div class="course__title">126,300</div>
+						<div class="course__text">Identity Theft Cases Reported
+							in Australia</div>
+					</div>
+					<div class="course__row">
+						<div class="course__title">$20.1bn</div>
+						<div class="course__text">Online Transactions per
+							annum by Australians</div>
+					</div>
+					<div class="course__row">
+						<div class="course__title">45,511</div>
+						<div class="course__text">Online Fraud Cases Reported
+							in Australia</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__what-we-do what-we-do">
+				<div class="what-we-do__container">
+					<h2 class="what-we-do__title">What We Do</h2>
+					<div class="what-we-do__box">
+						<div class="what-we-do__item">
+							<div class="what-we-do__image">
+								<picture>
+									<source srcset="img/device.webp" type="image/webp"><img src="img/device.png" alt="">
+								</picture>
+							</div>
+							<div class="what-we-do__label">Device Authentication</div>
+							<div class="what-we-do__text">Hardware-based device fingerprinting resilient to cloning, malware
+								and device jailbreak/root. Hardware-level control over the displayed UI independent of the
+								device operating system. Hardware-level data protection.
+							</div>
+						</div>
+						<div class="what-we-do__item">
+							<div class="what-we-do__image">
+								<picture>
+									<source srcset="img/user.webp" type="image/webp"><img src="img/user.png" alt="">
+								</picture>
+							</div>
+							<div class="what-we-do__label">User Authentication</div>
+							<div class="what-we-do__text">Verify the identity of users for access control with contemporary
+								biometric connected MFA security tokens.
+							</div>
+						</div>
+						<div class="what-we-do__item">
+							<div class="what-we-do__image">
+								<picture>
+									<source srcset="img/transaction.webp" type="image/webp"><img src="img/transaction.png"
+										alt="">
+								</picture>
+							</div>
+							<div class="what-we-do__label">Transaction Authentication</div>
+							<div class="what-we-do__text">High assurance out-of-band authentication of high impact transactions
+								and instructions initiated through electronic service delivery channels. Audit trail of
+								verification for non-repudiation. Fraud protection against <br> man-in-the-middle and browser
+								malware.
+							</div>
+						</div>
+						<div class="what-we-do__item">
+							<div class="what-we-do__image">
+								<picture>
+									<source srcset="img/contemporary.webp" type="image/webp"><img src="img/contemporary.png"
+										alt="">
+								</picture>
+							</div>
+							<div class="what-we-do__label">Contemporary authentication methods</div>
+							<div class="what-we-do__text">Echidna authentication server to enable adaptive risk-based approach
+								to security through a range of methods for different levels of authentication assurance from SMS
+								OTPs, Challenge/Response, to more contemporary QR code signing and advanced connected mobile
+								security tokens capable of transaction signatures with dynamic linking of the transaction
+								context and addition of PIN, Fingerprint and other biometrics.
+							</div>
+						</div>
+						<div class="what-we-do__item">
+							<div class="what-we-do__image">
+								<picture>
+									<source srcset="img/hsm.webp" type="image/webp"><img src="img/hsm.png" alt="">
+								</picture>
+							</div>
+							<div class="what-we-do__label">HSM Solutions</div>
+							<div class="what-we-do__text">Reseller of Thales nShield HSMs with professional services and
+								subject matter expertise in HSMs, key ceremony procedures, and SEE code development.
+							</div>
+						</div>
+						<div class="what-we-do__item">
+							<div class="what-we-do__image">
+								<picture>
+									<source srcset="img/cloud.webp" type="image/webp"><img src="img/cloud.png" alt="">
+								</picture>
+							</div>
+							<div class="what-we-do__label">Cloud & IoT Security</div>
+							<div class="what-we-do__text">Secure the identity and access of users, devices and Internet of
+								Things connecting into the cloud. Support cloud adoption and migration of applications and data
+								into private and public clouds.
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section class="page__product-sporlight product-sportlight">
+				<div class="product-sportlight__container">
+					<div class="product-sportlight__row">
+						<h2 class="product-sportlight__title">Product Spotlight</h2>
+						<div class="product-sportlight__text">Salt mSign Connected Token is a contemporary mobile security 2FA
+							token for authentication of user identity and verification of transactions independent of the
+							delivery
+							channel that initiated the request.</div>
+					</div>
+					<div class="product-sportlight__video-msign msign-video" onclick="openVideoPopup()">
+						<div class="msign-video__image">
+							<picture>
+								<source srcset="img/msign.webp" type="image/webp"><img src="img/msign.jpg" alt="">
+							</picture>
+						</div>
+						<div class="msign-video__box">
+							<div class="msign-video__icon-play">
+								<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M30.9268 16.9634C30.9268 24.6752 24.6752 30.9268 16.9634 30.9268C9.25163 30.9268 3 24.6752 3 16.9634C3 9.25163 9.25163 3 16.9634 3C24.6752 3 30.9268 9.25163 30.9268 16.9634ZM33.9268 16.9634C33.9268 26.332 26.332 33.9268 16.9634 33.9268C7.59477 33.9268 0 26.332 0 16.9634C0 7.59477 7.59477 0 16.9634 0C26.332 0 33.9268 7.59477 33.9268 16.9634ZM14.2096 22.4963L22.471 16.9634L14.2096 11.4305L14.2096 22.4963Z"
+										fill="white" />
+								</svg>
+							</div>
+							<div class="msign-video__label">Feature video</div>
+							<div class="msign-video__text">mSign Connected token</div>
+						</div>
+					</div>
+					<span class="product-sportlight__button btn">
+						MORE INFO
+					</span>
+				</div>
+			</section>
+			<section class="page__ready-to-get ready-to-get">
+				<div class="ready-to-get__container">
+					<h2 class="ready-to-get__title">Ready to get started?</h2>
+					<div class="ready-to-get__form">
+						<form action="#" class="form">
+							<div class="form__title">Contact us</div>
+							<div class="form__line">
+								<label for="fname" class="form__label">First Name</label>
+								<input id="fname" autocomplete="off" type="text" name="fname" placeholder="First Name"
+									class="form__input">
+							</div>
+							<div class="form__line">
+								<label for="fname" class="form__label">Last Name</label>
+								<input id="lname" autocomplete="off" type="text" name="lname" placeholder="Last Name"
+									class="form__input">
+							</div>
+							<div class="form__line">
+								<label for="email" class="form__label">Email Address</label>
+								<input id="email" autocomplete="off" type="text" name="email" placeholder="Email Address"
+									class="form__input">
+							</div>
+							<div class="form__line">
+								<label for="message" class="form__label">Your message</label>
+								<textarea class="form__input" name="message" id="message" cols="30" rows="10"
+									placeholder="Your message"></textarea>
+							</div>
+							<button type="submit" class="form__btn btn">SEND</button>
+						</form>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__twitter">
+					<a class="twitter-timeline" data-height="295"
+						href="https://twitter.com/saltgroup?ref_src=twsrc%5Etfw">Tweets by
+						saltgroup</a>
+				</div>
+				<div class="footer__items">
+					<div class="footer__row">
+						<div class="footer__list">
+							<div class="footer__title">
+								<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.75 0L17.5 5V15L8.75 20L0 15V5L8.75 0Z" fill="#FF8B00" />
+								</svg>
+								Navigation
+							</div>
+							<ul>
+								<li><a href="" class="footer__link">Home</a></li>
+								<li><a href="" class="footer__link">Products</a></li>
+								<li><a href="" class="footer__link">Services</a></li>
+								<li><a href="" class="footer__link">Resources</a></li>
+								<li><a href="" class="footer__link">About</a></li>
+								<li><a href="" class="footer__link">CONTACT US</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__row">
+						<div class="footer__list">
+							<div class="footer__title">
+								<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.75 0L17.5 5V15L8.75 20L0 15V5L8.75 0Z" fill="#FF8B00" />
+								</svg>
+								links
+							</div>
+							<ul>
+								<li><a href="" class="footer__link">Disclaimer</a></li>
+								<li><a href="" class="footer__link">Legal</a></li>
+								<li><a href="" class="footer__link">Environment</a></li>
+								<li><a href="" class="footer__link">Policy</a></li>
+								<li><a href="" class="footer__link">Privacy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__row">
+						<div class="footer__list">
+							<div class="footer__title">
+								<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.75 0L17.5 5V15L8.75 20L0 15V5L8.75 0Z" fill="#FF8B00" />
+								</svg>
+								contact sales
+							</div>
+							<ul>
+								<li><a href="" class="footer__link">PHONE: +61 3 9614 4416</a></li>
+								<li><a href="" class="footer__link email">EMAIL: sales@saltgroup.com.au</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__logo">
+					<picture>
+						<source srcset="img/footerLogo.webp" type="image/webp"><img src="img/footerLogo.png" alt="">
+					</picture>
+
+				</div>
+			</div>
+			<div class="footer__copy">
+				© 2017 SALT GROUP
+				<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.75 0L17.5 5V15L8.75 20L0 15V5L8.75 0Z" fill="#FF8B00" />
+				</svg>
+				ALL RIGHTS RESERVED. WEBSITE BY DORNE CREATIVE.
+			</div>
+		</footer>
+		<section class="popup">
+			<div class="popup__body">
+				<div class="popup__close"><span onclick="closeVideoPopup()">X</span></div>
+				<div class="popup__content">
+					<video id="myVideo" src="videos/sporttearn.mp4" controls></video>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
